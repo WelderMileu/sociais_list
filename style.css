@@ -120,7 +120,7 @@ body {
 	margin-top: 25px;
 
 	padding: 25px 20px;
-	background-color: rgba(0,0,0,.4);
+	background-color: rgba(255,255,255, .2);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 
@@ -130,7 +130,9 @@ body {
 
 .card .card__content .card__sociais i {
 	font-size: 46px;
-	color: #fff;
+	background: -webkit-linear-gradient(#00DFFC, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	cursor: pointer;
 	transition: .3s ease-in;
 }
@@ -206,5 +208,9 @@ body {
 @media screen and (max-width: 500px) {
 	.card .card__content {
 		width: 80%;
+	}
+
+	.card .card__content .card__sociais i {
+		font-size: 36px;
 	}
 }
