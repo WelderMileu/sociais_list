@@ -13,7 +13,10 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.2rem;
 	font-weight: 300;
-	background: linear-gradient(to bottom, #033649, #031634)
+	background: url(build/img/bg_image_min.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #000;
 }
 
 .container {
@@ -33,24 +36,25 @@ body {
 	position: relative;
 	border-bottom: none;
 	padding: 30px 0;
+	margin-bottom: 100px;
+	margin-left: 5px;
 	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	
-	/*border: 1px solid rgba(255,255,255, .5);*/
-	border-radius: 5px;
-	/*background: rgba(255,255,255, .1);*/
-	/*-webkit-backdrop-filter: blur(2px);*/
-	/*backdrop-filter: blur(2px);	*/
+	border: 1px solid rgba(255,255,255, .5);
+	border-radius: 20px;
+	background: rgba(255,255,255, .0555);
+	-webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);	
 }
 
 .card .card__image {
 	position: relative;
-	padding: 10px;
+	padding: 5px;
 	margin-bottom: 10px;
-	margin-top: 30px;
 }
 
 .card .card__image:before {
@@ -63,8 +67,8 @@ body {
 	border-left: none;
 	z-index: -1;
 	border-radius: 100px;
-	top: 5px;
-	left: 7px;
+	top: 0px;
+	left: 2px;
 	animation: 10s borda forwards ease-in infinite;
 }
 
@@ -122,12 +126,14 @@ body {
 
 
 .card .card__content .card__sociais {
-	width: 80%;
+	position: absolute;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 25px;
+	/*margin-top: 25px;*/
+	top: 350px;
 
 	/*padding: 25px 20px;*/
 
@@ -135,7 +141,7 @@ body {
 }
 
 .card .card__content .card__sociais i {
-	font-size: 46px;
+	font-size: 40px;
 	background: -webkit-linear-gradient(#f1f1f1, #fff);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -192,7 +198,7 @@ body {
 	width: 100px;
 	height: 100px;
 	border: 2px solid rgba(255,255,255, 0.1);
-	backdrop-filter: blur(40px);
+	/*backdrop-filter: blur(40px);*/
 	border-radius: 10px;
 	z-index: -2;
 
